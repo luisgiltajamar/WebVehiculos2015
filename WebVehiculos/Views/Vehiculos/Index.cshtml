@@ -54,8 +54,11 @@
 
             var txt = $("#txtBus").val();
             var buscando = $("#ddlTipoBusqueda").val();
-            var url = "@Url.Action("Buscar")" + "?idTipo=" + tipo +
-                "&campo=" + buscando + "&contenido=" + txt;
+            var url = "@Url.Action("Buscar")" + "/" + tipo + 
+                "/" + buscando + "/" + txt;
+            
+            
+            // + "?idTipo=" + tipo +"&campo=" + buscando + "&contenido=" + txt;
             $("#contenido").load(encodeURI(url));
         }
 

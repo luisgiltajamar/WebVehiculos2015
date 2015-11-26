@@ -7,12 +7,14 @@ using WebVehiculos.Models;
 
 namespace WebVehiculos.Controllers
 {
+    [Authorize]
     public class TipoVehiculoController : Controller
     {
        VehiculosLuisEntities db=new VehiculosLuisEntities();
         // GET: TipoVehiculo
         public ActionResult Index()
         {
+            
 
             return View(db.TipoVehiculo.ToList());
         }

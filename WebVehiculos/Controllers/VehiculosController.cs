@@ -7,6 +7,7 @@ using WebVehiculos.Models;
 
 namespace WebVehiculos.Controllers
 {
+    [Authorize]
     public class VehiculosController : Controller
     {
         VehiculosLuisEntities db=new VehiculosLuisEntities();

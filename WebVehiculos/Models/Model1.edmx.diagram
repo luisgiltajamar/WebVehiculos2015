@@ -8,6 +8,9 @@
         <EntityTypeShape EntityType="VehiculosLuisModel.TipoVehiculo" Width="1.5" PointX="0.75" PointY="1.25" IsExpanded="true" />
         <EntityTypeShape EntityType="VehiculosLuisModel.Vehiculo" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
         <AssociationConnector Association="VehiculosLuisModel.FK_Vehiculo_TipoVehiculo" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="VehiculosLuisModel.Usuario" Width="1.5" PointX="5.75" PointY="0.625" />
+        <EntityTypeShape EntityType="VehiculosLuisModel.Rol" Width="1.5" PointX="8.5" PointY="1" />
+        <AssociationConnector Association="VehiculosLuisModel.UsuarioRol" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

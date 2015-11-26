@@ -27,5 +27,7 @@ namespace WebVehiculos.Models
     
         public virtual DbSet<TipoVehiculo> TipoVehiculo { get; set; }
         public virtual DbSet<Vehiculo> Vehiculo { get; set; }
+        public virtual DbSet<Usuario> UsuarioSet { get; set; }
+        public virtual DbSet<Rol> RolSet { get; set; }
     }
 }
